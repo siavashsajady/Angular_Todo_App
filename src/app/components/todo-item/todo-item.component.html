@@ -1,0 +1,16 @@
+<div [ngClass]="setClasses()">
+  <p>
+    <label>
+      <input (change)="onToggle(todo)" type="checkbox" />
+      <span></span>
+    </label>
+
+    {{ todo.title }}
+    <button
+      (click)="onDelete(todo)"
+      class="btn-floating btn-small waves-effect waves-light red right"
+    >
+      <i class="material-icons ">remove </i>
+    </button>
+  </p>
+</div>

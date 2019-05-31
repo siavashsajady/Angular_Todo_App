@@ -1,0 +1,18 @@
+<div>
+  <form class="form" (ngSubmit)="onSubmit()">
+    <input
+      placeholder="Add Todo ..."
+      name="title"
+      type="text"
+      [(ngModel)]="title"
+    />
+    <button
+      class="btn waves-effect waves-light blue-grey darken-2"
+      type="submit"
+      value="Submit"
+    >
+      Submit
+      <i class="material-icons right">send</i>
+    </button>
+  </form>
+</div>
